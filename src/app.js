@@ -1,5 +1,7 @@
-global.$ = require('jquery');
-
+var $ = require('jquery');
+// make jQuery global for that bootstrap depend on jQuery .
+global.jQuery = $;
+require('bootstrap');
 
 $(function(){
   $( "#go" ).click(function() {
